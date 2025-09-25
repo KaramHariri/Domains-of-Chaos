@@ -30,7 +30,7 @@ public class Spear : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            Debug.Log("Hit");
+            //Debug.Log("Hit");
             Destroy(gameObject);
         }
         

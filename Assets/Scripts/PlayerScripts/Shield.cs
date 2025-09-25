@@ -16,6 +16,7 @@ public class Shield : MonoBehaviour
     public void RotateAroundPlayer(Transform playerTransform, float angle)
     {
         transform.RotateAround(playerTransform.position, Vector3.forward, angle);
+        transform.rotation = Quaternion.Euler(Vector3.zero);
     }
 
     

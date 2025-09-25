@@ -1840,6 +1840,7 @@ GameObject:
   - component: {fileID: 1979095784}
   - component: {fileID: 1979095783}
   - component: {fileID: 1979095782}
+  - component: {fileID: 1979095791}
   - component: {fileID: 1979095788}
   - component: {fileID: 1979095790}
   - component: {fileID: 1979095789}
@@ -1865,14 +1866,6 @@ MonoBehaviour:
   MovementAction: {fileID: -3272325433219246878, guid: 67e66571f49e0924187c8ba0a77f133c, type: 3}
   DashAction: {fileID: -7165397864962229597, guid: 67e66571f49e0924187c8ba0a77f133c, type: 3}
   Rb: {fileID: 0}
-  FireRate: 1
-  SpearPrefab: {fileID: 3221110455603824346, guid: e458b67d3327750458f381e55a1a0ed0, type: 3}
-  CurrentShieldCount: 0
-  MaxShieldCount: 0
-  Radius: 3
-  ShieldPrefab: {fileID: 8197816878992026961, guid: b834681dfb542984d8f9f1d8444f31ee, type: 3}
-  Shields: []
-  OrbitSpeedDegPerSec: 90
   AddXp: 0
 --- !u!114 &1979095783
 MonoBehaviour:
@@ -2093,6 +2086,26 @@ MonoBehaviour:
   DashDuration: 0.25
   DashCooldown: 1
   DashMultiplierPercentage: 0
+--- !u!114 &1979095791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979095781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c227051c78bb27499c834c6489120c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AbilityController
+  FireRate: 1
+  SpearPrefab: {fileID: 3221110455603824346, guid: e458b67d3327750458f381e55a1a0ed0, type: 3}
+  CurrentShieldCount: 0
+  MaxShieldCount: 0
+  Radius: 5
+  ShieldPrefab: {fileID: 8197816878992026961, guid: b834681dfb542984d8f9f1d8444f31ee, type: 3}
+  Shields: []
+  OrbitSpeedDegPerSec: 90
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
