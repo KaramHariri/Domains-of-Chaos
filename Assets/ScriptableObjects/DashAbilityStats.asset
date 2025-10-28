@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e1d96d7858d85649a7bcf6d044a3763, type: 3}
+  m_Name: DashAbilityStats
+  m_EditorClassIdentifier: Assembly-CSharp::DashAbilityStats
+  DashInfo:
+  - Level: Level 1
+    Name: Swift Step
+    Description: Gain the ability to dash forward with a cooldown of 4s.
+    Sprite: {fileID: 21300000, guid: b2a9b8a42c03418419e502b69fe0fd29, type: 3}
+    AbilityType: 0
+    DashCooldownReductionPercentage: 0
+    DashDistanceMultiplierPercentage: 0
+    MovementSpeedMultiplierPercentage: 0
+    MaxAbility: 0
+  - Level: Level2
+    Name: Momentum Flow
+    Description: Dash cooldown reduced by 10%, allowing more frequent dashes.
+    Sprite: {fileID: 21300000, guid: 9ac8aae3e335ab24682c2f2c597158e3, type: 3}
+    AbilityType: 0
+    DashCooldownReductionPercentage: 20
+    DashDistanceMultiplierPercentage: 0
+    MovementSpeedMultiplierPercentage: 0
+    MaxAbility: 0
+  - Level: Level3
+    Name: Fleetfoot
+    Description: Your overall movement speed is increased, letting you close gaps
+      or escape faster
+    Sprite: {fileID: 21300000, guid: 55531ccd5c6df6140b64cdd52fa90cec, type: 3}
+    AbilityType: 0
+    DashCooldownReductionPercentage: 0
+    DashDistanceMultiplierPercentage: 0
+    MovementSpeedMultiplierPercentage: 60
+    MaxAbility: 0
+  - Level: Level4
+    Name: Extended Stride
+    Description: Dash distance increased by 20%, covering more ground in a single
+      burst.
+    Sprite: {fileID: 21300000, guid: c9d2cad7ce4a2704bb54bc1b256f0336, type: 3}
+    AbilityType: 0
+    DashCooldownReductionPercentage: 0
+    DashDistanceMultiplierPercentage: 50
+    MovementSpeedMultiplierPercentage: 0
+    MaxAbility: 0
+  - Level: Level5
+    Name: Cooldown
+    Description: Decrease the dash cooldown by additional 25%.
+    Sprite: {fileID: 21300000, guid: 3aa02905d4cfe094c827d875c8eddd52, type: 3}
+    AbilityType: 0
+    DashCooldownReductionPercentage: 25
+    DashDistanceMultiplierPercentage: 0
+    MovementSpeedMultiplierPercentage: 0
+    MaxAbility: 0
+  - Level: Level6
+    Name: Runner
+    Description: Double your movement speed
+    Sprite: {fileID: 21300000, guid: 48bcf37b2c6d53e4c924d1425e0e0b6c, type: 3}
+    AbilityType: 0
+    DashCooldownReductionPercentage: 0
+    DashDistanceMultiplierPercentage: 0
+    MovementSpeedMultiplierPercentage: 70
+    MaxAbility: 0
+  - Level: 'Level 7 '
+    Name: Endless Motion
+    Description: Dash cooldown reduced by half
+    Sprite: {fileID: 21300000, guid: a1a633d6d24ad9e4db07471f81254b13, type: 3}
+    AbilityType: 0
+    DashCooldownReductionPercentage: 35
+    DashDistanceMultiplierPercentage: 0
+    MovementSpeedMultiplierPercentage: 0
+    MaxAbility: 0
+  - Level: Level 8
+    Name: Divine Surge
+    Description: 'Dashing now unleashes a unique power depending on your domain:'
+    Sprite: {fileID: 21300000, guid: 94cc0aef10bc7b945b6a98ca5b922a02, type: 3}
+    AbilityType: 0
+    DashCooldownReductionPercentage: 0
+    DashDistanceMultiplierPercentage: 0
+    MovementSpeedMultiplierPercentage: 0
+    MaxAbility: 1
+  CurrentAbilityLevel: 0
+  MaxAbilityLevel: 8

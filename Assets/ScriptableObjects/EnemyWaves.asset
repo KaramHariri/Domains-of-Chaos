@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6013d0c88caef344f8d2dbd55ee8c710, type: 3}
+  m_Name: EnemyWaves
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyWaves
+  Waves:
+  - EnemiesToSpawInWave:
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    NumberOfEnemiesInWave: 10
+    TimeToNextEnemySpawn: 1.5
+  - EnemiesToSpawInWave:
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 12
+    TimeToNextEnemySpawn: 1.4
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    NumberOfEnemiesInWave: 14
+    TimeToNextEnemySpawn: 1.3
+  - EnemiesToSpawInWave:
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 20
+    TimeToNextEnemySpawn: 1.2
+  - EnemiesToSpawInWave:
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    NumberOfEnemiesInWave: 24
+    TimeToNextEnemySpawn: 1.1
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 28
+    TimeToNextEnemySpawn: 1
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 34
+    TimeToNextEnemySpawn: 0.95
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 40
+    TimeToNextEnemySpawn: 0.9
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 46
+    TimeToNextEnemySpawn: 0.85
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 52
+    TimeToNextEnemySpawn: 0.8
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 58
+    TimeToNextEnemySpawn: 0.75
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 64
+    TimeToNextEnemySpawn: 0.7
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 70
+    TimeToNextEnemySpawn: 0.65
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 76
+    TimeToNextEnemySpawn: 0.6
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 82
+    TimeToNextEnemySpawn: 0.55
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 88
+    TimeToNextEnemySpawn: 0.5
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 94
+    TimeToNextEnemySpawn: 0.48
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 100
+    TimeToNextEnemySpawn: 0.46
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    NumberOfEnemiesInWave: 108
+    TimeToNextEnemySpawn: 0.44
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    NumberOfEnemiesInWave: 116
+    TimeToNextEnemySpawn: 0.42
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 124
+    TimeToNextEnemySpawn: 0.4
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    NumberOfEnemiesInWave: 132
+    TimeToNextEnemySpawn: 0.38
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    NumberOfEnemiesInWave: 140
+    TimeToNextEnemySpawn: 0.36
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 148
+    TimeToNextEnemySpawn: 0.34
+  - EnemiesToSpawInWave:
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    NumberOfEnemiesInWave: 156
+    TimeToNextEnemySpawn: 0.32
+  - EnemiesToSpawInWave:
+    - {fileID: 2562800403610026837, guid: cd9fcc6c507cffa4f8828f8cdd1b5db6, type: 3}
+    - {fileID: 5524108497438977355, guid: afee562fe4960ad4ca3e7ab4b1a8074d, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    - {fileID: 744768168375696315, guid: 43999439d4e0a6347b1e15bde79f6350, type: 3}
+    NumberOfEnemiesInWave: 164
+    TimeToNextEnemySpawn: 0.3
+  TimeBetweenWaveSpawn: 6

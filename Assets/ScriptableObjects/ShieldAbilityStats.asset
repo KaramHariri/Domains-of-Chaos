@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0936fcb76cc254c47985dc5e8335a953, type: 3}
+  m_Name: ShieldAbilityStats
+  m_EditorClassIdentifier: Assembly-CSharp::ShieldAbilityStats
+  ShieldInfo:
+  - Level: Level 1
+    Name: Sentinel Orbit
+    Description: A single energy shield orbits slowly around you, damaging enemies
+      on contact.
+    Sprite: {fileID: 21300000, guid: 7c832cdbe05d66a4984c514d02f2bdba, type: 3}
+    AbilityType: 2
+    ShieldCount: 1
+    ShieldRotationSpeedMultiplierPercentage: 0
+    ShieldDamageMultiplierPercentage: 0
+    MaxAbility: 0
+  - Level: Level 2
+    Name: Hardened Edge
+    Description: The shield's damage increases, carving through tougher foes.
+    Sprite: {fileID: 21300000, guid: 541d297d00a5a75479053192cc14d44a, type: 3}
+    AbilityType: 2
+    ShieldCount: 0
+    ShieldRotationSpeedMultiplierPercentage: 0
+    ShieldDamageMultiplierPercentage: 20
+    MaxAbility: 0
+  - Level: Level 3
+    Name: Accelerated Spin
+    Description: The shield rotates faster, striking enemies more often.
+    Sprite: {fileID: 21300000, guid: 05d78edd55a95d34db45257f98a71f06, type: 3}
+    AbilityType: 2
+    ShieldCount: 0
+    ShieldRotationSpeedMultiplierPercentage: 30
+    ShieldDamageMultiplierPercentage: 0
+    MaxAbility: 0
+  - Level: Level 4
+    Name: Twin Guardians
+    Description: Two more shields manifests.
+    Sprite: {fileID: 21300000, guid: f1a50e3ef4c20994ca4233f38fadf99d, type: 3}
+    AbilityType: 2
+    ShieldCount: 2
+    ShieldRotationSpeedMultiplierPercentage: 0
+    ShieldDamageMultiplierPercentage: 0
+    MaxAbility: 0
+  - Level: Level 5
+    Name: Expanding Force
+    Description: Shield Damage Increase by additional 30%
+    Sprite: {fileID: 21300000, guid: cf634cc38a07d874898143be97b170a3, type: 3}
+    AbilityType: 2
+    ShieldCount: 0
+    ShieldRotationSpeedMultiplierPercentage: 0
+    ShieldDamageMultiplierPercentage: 30
+    MaxAbility: 0
+  - Level: Level 6
+    Name: Cyclone Guard
+    Description: Rotation speed increases again, creating a whirling barrier of protection.
+    Sprite: {fileID: 21300000, guid: d271975afa8b375459bb76f1fe2fd250, type: 3}
+    AbilityType: 2
+    ShieldCount: 0
+    ShieldRotationSpeedMultiplierPercentage: 30
+    ShieldDamageMultiplierPercentage: 0
+    MaxAbility: 0
+  - Level: Level 7
+    Name: Triumvirate Aegis
+    Description: Double the amount of shields, leaving almost no gaps in your defence.
+    Sprite: {fileID: 21300000, guid: 0de7c2db6259183469c6c7802690c3a9, type: 3}
+    AbilityType: 2
+    ShieldCount: 3
+    ShieldRotationSpeedMultiplierPercentage: 0
+    ShieldDamageMultiplierPercentage: 0
+    MaxAbility: 0
+  - Level: Level 8
+    Name: Shocking Impact
+    Description: Enemies struck by your shields are stunned, leaving them vulnerable
+      to follow-up attacks. Increase the Damage by 30%
+    Sprite: {fileID: 21300000, guid: 2fc745c7c77ed9043beeed487a9b473c, type: 3}
+    AbilityType: 2
+    ShieldCount: 0
+    ShieldRotationSpeedMultiplierPercentage: 0
+    ShieldDamageMultiplierPercentage: 0
+    MaxAbility: 1
+  CurrentAbilityLevel: 0
+  MaxAbilityLevel: 8

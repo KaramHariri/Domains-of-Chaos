@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: d271975afa8b375459bb76f1fe2fd250
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8083214193644645490
+    second: Shield lvl 6_0
+  - first:
+      213: 2551768297355837233
+    second: Shield lvl 6_1
+  - first:
+      213: -7753584157844890870
+    second: Shield lvl 6_2
+  - first:
+      213: 5594357712168109226
+    second: Shield lvl 6_3
+  - first:
+      213: 8481598504360679604
+    second: Shield lvl 6_4
+  - first:
+      213: 50038892564518972
+    second: Shield lvl 6_5
+  - first:
+      213: 7535699543613233047
+    second: Shield lvl 6_6
+  - first:
+      213: 6390186634955693149
+    second: Shield lvl 6_7
+  - first:
+      213: -5698323960452291876
+    second: Shield lvl 6_8
+  - first:
+      213: 2490932163155310238
+    second: Shield lvl 6_9
+  - first:
+      213: -8839241509574293929
+    second: Shield lvl 6_10
+  - first:
+      213: 862968655575917432
+    second: Shield lvl 6_11
+  - first:
+      213: 2526855163278252963
+    second: Shield lvl 6_12
+  - first:
+      213: 1436191357984676885
+    second: Shield lvl 6_13
+  - first:
+      213: 2472072376140636185
+    second: Shield lvl 6_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shield lvl 6_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 616
+        width: 459
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e835a608487a2df80800000000000000
+      internalID: -8083214193644645490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield lvl 6_1
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 863
+        width: 459
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f7ff02fb3b96320800000000000000
+      internalID: 2551768297355837233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield lvl 6_2
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 935
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b1f87e94cb56490800000000000000
+      internalID: -7753584157844890870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield lvl 6_3
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 584
+        width: 376
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa44f34f2b623ad40800000000000000
+      internalID: 5594357712168109226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield lvl 6_4
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 884
+        width: 28
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b817ebf6e0b4b570800000000000000
+      internalID: 8481598504360679604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield lvl 6_5
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 759
+        width: 78
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3813409b16c1b000800000000000000
+      internalID: 50038892564518972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield lvl 6_6
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 408
+        width: 422
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797d32f1fce249860800000000000000
+      internalID: 7535699543613233047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield lvl 6_7
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 637
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c9bf843e08ea850800000000000000
+      internalID: 6390186634955693149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield lvl 6_8
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 231
+        width: 422
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2e42a8c8c7be0b0800000000000000
+      internalID: -5698323960452291876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield lvl 6_9
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 376
+        width: 118
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96b778da91919220800000000000000
+      internalID: 2490932163155310238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield lvl 6_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 355
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756cfe9eda4b45580800000000000000
+      internalID: -8839241509574293929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield lvl 6_11
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 0
+        width: 595
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87326e78b61e9fb00800000000000000
+      internalID: 862968655575917432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield lvl 6_12
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 143
+        width: 138
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3abdf061261311320800000000000000
+      internalID: 2526855163278252963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield lvl 6_13
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 80
+        width: 218
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c992a4e606ee310800000000000000
+      internalID: 1436191357984676885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield lvl 6_14
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 67
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9102bee7ab09e4220800000000000000
+      internalID: 2472072376140636185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Shield lvl 6_0: -8083214193644645490
+      Shield lvl 6_1: 2551768297355837233
+      Shield lvl 6_10: -8839241509574293929
+      Shield lvl 6_11: 862968655575917432
+      Shield lvl 6_12: 2526855163278252963
+      Shield lvl 6_13: 1436191357984676885
+      Shield lvl 6_14: 2472072376140636185
+      Shield lvl 6_2: -7753584157844890870
+      Shield lvl 6_3: 5594357712168109226
+      Shield lvl 6_4: 8481598504360679604
+      Shield lvl 6_5: 50038892564518972
+      Shield lvl 6_6: 7535699543613233047
+      Shield lvl 6_7: 6390186634955693149
+      Shield lvl 6_8: -5698323960452291876
+      Shield lvl 6_9: 2490932163155310238
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
