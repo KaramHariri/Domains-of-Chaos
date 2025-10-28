@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: ef4c76b6d3d507b4da5cc8ff02ecfba3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5901727455254826010
+    second: Health lvl 7_0
+  - first:
+      213: -1111498151595571267
+    second: Health lvl 7_1
+  - first:
+      213: -5946641362889577711
+    second: Health lvl 7_2
+  - first:
+      213: -5681217991193499229
+    second: Health lvl 7_3
+  - first:
+      213: -3410178713569979331
+    second: Health lvl 7_4
+  - first:
+      213: -7882689595246539712
+    second: Health lvl 7_5
+  - first:
+      213: 5279901845218650510
+    second: Health lvl 7_6
+  - first:
+      213: -6993452610519031701
+    second: Health lvl 7_7
+  - first:
+      213: 8664731962605809189
+    second: Health lvl 7_8
+  - first:
+      213: 725217254156524161
+    second: Health lvl 7_9
+  - first:
+      213: -4933847423453835724
+    second: Health lvl 7_10
+  - first:
+      213: 3478951375032095442
+    second: Health lvl 7_11
+  - first:
+      213: -4849601309230483806
+    second: Health lvl 7_12
+  - first:
+      213: -7582705438351063357
+    second: Health lvl 7_13
+  - first:
+      213: -6487160903952085328
+    second: Health lvl 7_14
+  - first:
+      213: -8339288219981502818
+    second: Health lvl 7_15
+  - first:
+      213: -7495998328987580090
+    second: Health lvl 7_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Health lvl 7_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 8
+        width: 1008
+        height: 1011
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e3bd5ce52ad81ea0800000000000000
+      internalID: -5901727455254826010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_1
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 843
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db784a1f15a2390f0800000000000000
+      internalID: -1111498151595571267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_2
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 683
+        width: 216
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b6256ef29497da0800000000000000
+      internalID: -5946641362889577711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 839
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a96a5f56524821b0800000000000000
+      internalID: -5681217991193499229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_4
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 823
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d341015278c9ca0d0800000000000000
+      internalID: -3410178713569979331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_5
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 448
+        width: 68
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c89a0d39f0b9290800000000000000
+      internalID: -7882689595246539712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_6
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 447
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89ef2d01caf54940800000000000000
+      internalID: 5279901845218650510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_7
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 439
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b602c7457e342fe90800000000000000
+      internalID: -6993452610519031701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_8
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 160
+        width: 196
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ea711ffcf4f3870800000000000000
+      internalID: 8664731962605809189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_9
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 146
+        width: 58
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18adbf2104d701a00800000000000000
+      internalID: 725217254156524161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_10
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 152
+        width: 109
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ece05b8e3778bb0800000000000000
+      internalID: -4933847423453835724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 146
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d215a3e7d7b74030800000000000000
+      internalID: 3478951375032095442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_12
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 144
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a63c05bd41c2bcb0800000000000000
+      internalID: -4849601309230483806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_13
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 144
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c689a62491d4c690800000000000000
+      internalID: -7582705438351063357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_14
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 148
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be422f3789f8f5a0800000000000000
+      internalID: -6487160903952085328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_15
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 144
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9627602c85e44c80800000000000000
+      internalID: -8339288219981502818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health lvl 7_16
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 147
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64906cb3c3dd8f790800000000000000
+      internalID: -7495998328987580090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Health lvl 7_0: -5901727455254826010
+      Health lvl 7_1: -1111498151595571267
+      Health lvl 7_10: -4933847423453835724
+      Health lvl 7_11: 3478951375032095442
+      Health lvl 7_12: -4849601309230483806
+      Health lvl 7_13: -7582705438351063357
+      Health lvl 7_14: -6487160903952085328
+      Health lvl 7_15: -8339288219981502818
+      Health lvl 7_16: -7495998328987580090
+      Health lvl 7_2: -5946641362889577711
+      Health lvl 7_3: -5681217991193499229
+      Health lvl 7_4: -3410178713569979331
+      Health lvl 7_5: -7882689595246539712
+      Health lvl 7_6: 5279901845218650510
+      Health lvl 7_7: -6993452610519031701
+      Health lvl 7_8: 8664731962605809189
+      Health lvl 7_9: 725217254156524161
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

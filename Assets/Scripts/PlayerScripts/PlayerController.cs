@@ -1,91 +1,85 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
-{
 
+// level 2 increase movement.
+// level 3 cooldown reduction.
+// level 4 extra dash.
+// level 5 distance.
+// level 6 increase movement.
+// level 7 cooldown reduction.
+// level 8 elemental dash.
+
+public class PlayerController : MonoBehaviour, IDamagable
+{
     [HideInInspector] public static PlayerController Instance;
 
+    #region Input Actions
     //Input Actions
+    [Header("Input Actions and Animator")]
     public InputActionReference MovementAction;
     public InputActionReference DashAction;
+    private Animator PlayerAnimator;
+    #endregion
 
-    
+    #region Ability Stats References
+    //Ability stats
+    [Header("AbilityStats References")]
+    [SerializeField] private DashAbilityStats DashAbilityStats;
+    [SerializeField] private HealthAbilityStats HealthAbilityStats;
+    #endregion
+
+    #region Movement variables
+    private float MoveSpeed = 5.0f;
+    private float SpeedMultiplier = 0;
+    private Vector2 MoveDirection = Vector2.zero;
+    #endregion
+
+    #region Scirpts
     private Dash DashScript;
-    private Movement MovementScript;
-    
+    private Health HealthScript;
+    #endregion
+
+    #region Screen Boundaries
+    private float Bottom = -89f;
+    private float Top = 108f;
+    private float Right = 144f;
+    private float Left = -154f;
+    #endregion
+
     private Vector2 InputDirection;
     [HideInInspector] public Rigidbody2D Rb;
+    private AbilityController AbilityControllerScript;
 
-    [Header("ThrowingSpearSettings")]
-    [SerializeField] private float FireRate = 1.0f;
-    [SerializeField] private GameObject SpearPrefab;
-    private Vector2 DirectionToClosestEnemy = Vector2.zero;
-    private float CurrentSpearCooldown = 0f;
-    private float NextThrowingTime = 0f;
-
-    [Header("ShieldSettings")]
-    public int CurrentShieldCount = 0;      // Active orbiters (driven by ability level)
-    public int MaxShieldCount = 0;
-    public float Radius = 3f;
-    public GameObject ShieldPrefab;
-    public List<Shield> Shields = new List<Shield>();
-
-    float CurrentAngle = 0f;
-    public float OrbitSpeedDegPerSec = 90f;
-
-    int expAmount = 10;
-    public bool AddXp = false;
-
-    void Start()
+    void Awake()
     {
         Instance = this;
         Rb = GetComponent<Rigidbody2D>();
         DashScript = GetComponent<Dash>();
-        MovementScript = GetComponent<Movement>();
-        AddXp = false;
+        AbilityControllerScript = GetComponent<AbilityController>();
+        HealthScript = new Health();
+        PlayerAnimator = GetComponent<Animator>();
     }
 
-    
-    void Update()
-    {
-        CurrentAngle = OrbitSpeedDegPerSec * Time.deltaTime;
-        FindClosestEnemy();
-        InputDirection = MovementAction.action.ReadValue<Vector2>();
-
-        if(CanThrowSpear())
-        {
-            InstantiateSpear();
-        }
-
-        if (CurrentShieldCount != MaxShieldCount)
-        {
-            CreateShields();
-            CurrentShieldCount = MaxShieldCount;
-        }
-
-        if (CurrentShieldCount != 0)
-        {
-            RotateShields();
-        }
-
-        if (AddXp == true)
-        {
-            ExperienceManager.Instance.AddExperience(expAmount);
-            AddXp = false;
-        }
-    }
-
-    private void FixedUpdate()
+    public void UpdatePlayer()
     {
         if (DashScript.IsCurrentlyDashing()) return;
 
-        DashScript.DecreaseDashAbilityResetTimer();
-        DashScript.ResetDashCooldowns();
-        MovementScript.Move();
+        InputDirection = MovementAction.action.ReadValue<Vector2>();
+        
+        Move();
+        UpdateAnimation();
+        AbilityControllerScript.UpdateAbilities();
+    }
+
+    public void LatePlayerUpdate()
+    {
+        AbilityControllerScript.LateUpdateAbilities();
+        BoundaryCheck();
     }
 
     private void DashCallback(InputAction.CallbackContext context)
@@ -96,92 +90,109 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         DashAction.action.started += DashCallback;
+        Card.OnAbilitySelected += UpdateAbility;
+        HealthScript.SubscribeToDamageDealtAction();
+
+        DashAbilityStats.CurrentAbilityLevel = 0;
+        HealthAbilityStats.CurrentAbilityLevel = 0;
     }
 
     private void OnDisable()
     {
         DashAction.action.started -= DashCallback;
-    }
+        Card.OnAbilitySelected -= UpdateAbility;
+        HealthScript.UnSubscribeToDamageDealtAction();
 
-    private bool CanThrowSpear()
-    {
-        CurrentSpearCooldown += Time.deltaTime;
-        NextThrowingTime = 1f / FireRate;
-        if (CurrentSpearCooldown >= NextThrowingTime)
-        {
-            CurrentSpearCooldown = 0;
-            return true;
-        }
-        return false;
-    }
-
-    private void InstantiateSpear()
-    {
-        GameObject spear = Instantiate(SpearPrefab, transform.position, Quaternion.identity);
-        spear.GetComponent<Spear>().SetThrowDirection(DirectionToClosestEnemy);
+        DashAbilityStats.CurrentAbilityLevel = 0;
+        HealthAbilityStats.CurrentAbilityLevel = 0;
     }
 
     public Vector2 GetInputDirection()
     {
-        return InputDirection;
+        return InputDirection.normalized;
     }
 
-    private void FindClosestEnemy()
+    private void BoundaryCheck()
     {
-        float distanceToClosestEnemy = Mathf.Infinity;
-        Enemy closestEnemy = null;
-        Enemy[] allEnemies = GameObject.FindObjectsOfType<Enemy>();
+        if (transform.position.y < Bottom)
+            transform.position = new Vector3(transform.position.x, Bottom, transform.position.z);
+        if (transform.position.y > Top)
+            transform.position = new Vector3(transform.position.x, Top, transform.position.z);
+        if (transform.position.x > Right)
+            transform.position = new Vector3(Right, transform.position.y, transform.position.z);
+        if (transform.position.x < Left)
+            transform.position = new Vector3(Left, transform.position.y, transform.position.z);
 
-        foreach(Enemy currentEnemy in allEnemies)
-        {
-            float distanceToCurrentEnemy = (currentEnemy.transform.position - this.transform.position).sqrMagnitude;
-            if (distanceToCurrentEnemy < distanceToClosestEnemy)
-            {
-                distanceToClosestEnemy = distanceToCurrentEnemy;
-                closestEnemy = currentEnemy;
-            }
-        }
-        DirectionToClosestEnemy = closestEnemy.transform.position - this.transform.position;
-        DirectionToClosestEnemy.Normalize();
     }
 
-    private void ClearShieldList()
+    public void Move()
     {
-        foreach (var shield in Shields)
-        {
-            if (shield != null)
-            {
-                Destroy(shield.gameObject);
-            }
-        }
-        Shields.Clear();
+        MoveDirection = GetInputDirection();
+        Rb.linearVelocity = new Vector2(MoveDirection.x * MoveSpeed * (1 + SpeedMultiplier), MoveDirection.y * MoveSpeed * (1 + SpeedMultiplier));
     }
 
-    private void CreateShields()
+    private void UpdateAbility(AbilityType currentSelectionAbility)
     {
-        ClearShieldList();
-        float step = 360f / MaxShieldCount;
-
-        for (int i = 0; i < MaxShieldCount; i++)
+        switch (currentSelectionAbility)
         {
-            float angleDeg = i * step;
-            float rad = angleDeg * Mathf.Deg2Rad;
-
-
-            Vector3 offsetBetweenShield = new Vector3(Mathf.Cos(rad), Mathf.Sin(rad), 0f) * Radius;
-            Vector3 pos = transform.position + offsetBetweenShield;
-
-            GameObject shieldObject = Instantiate(ShieldPrefab, pos, Quaternion.identity);
-            Shield shieldScripts = shieldObject.GetComponent<Shield>();
-            Shields.Add(shieldScripts);
+            case AbilityType.DASH:
+                UpdateDashAbilityStat();
+                break;
+            case AbilityType.HEALTH:
+                UpdateHealthAbilityStat();
+                break;
         }
     }
 
-    private void RotateShields()
+    private void UpdateAnimation()
     {
-        foreach(var shield in Shields)
-        {
-            shield.RotateAroundPlayer(this.transform,CurrentAngle);
-        }
+        if (GetInputDirection().x > 0)
+            PlayerAnimator.SetTrigger("Right");
+        else if (GetInputDirection().x < 0)
+            PlayerAnimator.SetTrigger("Left");
+        else if (GetInputDirection().y > 0)
+            PlayerAnimator.SetTrigger("Up");
+        else if (GetInputDirection().y < 0)
+            PlayerAnimator.SetTrigger("Down");
+        else
+            PlayerAnimator.SetTrigger("Idle");
+
+    }
+
+    private void UpdateDashAbilityStat()
+    {
+        // Get the Ability stats from scriptable object.
+        float DashCooldownReductionMultiplierPercentage = DashAbilityStats.DashInfo[DashAbilityStats.CurrentAbilityLevel].DashCooldownReductionPercentage;
+        float DashDistanceMultiplierPercentage = DashAbilityStats.DashInfo[DashAbilityStats.CurrentAbilityLevel].DashDistanceMultiplierPercentage;
+        float SpeedMultiplierPercentage = DashAbilityStats.DashInfo[DashAbilityStats.CurrentAbilityLevel].MovementSpeedMultiplierPercentage;
+
+        // Update the ability values.
+        DashScript.HasDashAbility = true;
+        DashScript.MaxDashAbility = DashAbilityStats.DashInfo[DashAbilityStats.CurrentAbilityLevel].MaxAbility;
+        DashScript.DashCooldownReductionMultiplier += Utility.GetMultiplierValueFromPercentage(DashCooldownReductionMultiplierPercentage);
+        DashScript.DashDistanceMultiplier += Utility.GetMultiplierValueFromPercentage(DashDistanceMultiplierPercentage);
+        SpeedMultiplier += Utility.GetMultiplierValueFromPercentage(SpeedMultiplierPercentage);
+        
+
+        DashAbilityStats.CurrentAbilityLevel++;
+    }
+
+    private void UpdateHealthAbilityStat()
+    {
+        // Get the Ability stats from scriptable object.
+        float MaxHealthMultiplierPercentage = HealthAbilityStats.HealthInfo[HealthAbilityStats.CurrentAbilityLevel].MaxHealthMultiplierPercentage;
+        float LifeStealMultiplierPercentage = HealthAbilityStats.HealthInfo[HealthAbilityStats.CurrentAbilityLevel].LifeStealMultiplierPercentage;
+        float DamageReductionMultiplierPercentage = HealthAbilityStats.HealthInfo[(HealthAbilityStats.CurrentAbilityLevel)].DamageReductionMultiplierPercentage;
+
+        HealthScript.MaxHealthMultiplier += Utility.GetMultiplierValueFromPercentage(MaxHealthMultiplierPercentage);
+        HealthScript.LifeStealMultiplier += Utility.GetMultiplierValueFromPercentage(LifeStealMultiplierPercentage);
+        HealthScript.DamageReductionMultiplier += Utility.GetMultiplierValueFromPercentage(DamageReductionMultiplierPercentage);
+        HealthScript.IncreaseMaxHealth();
+        HealthAbilityStats.CurrentAbilityLevel++;
+    }
+
+    public void TakeDamage(float damageAmount)
+    {
+        HealthScript.TakeDamage(damageAmount);
     }
 }

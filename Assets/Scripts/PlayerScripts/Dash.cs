@@ -1,89 +1,72 @@
 using System.Collections;
 using UnityEngine;
 
+// level 2 increase movement.
+// level 3 cooldown reduction.
+// level 4 extra dash.
+// level 5 distance.
+// level 6 increase movement.
+// level 7 cooldown reduction.
+// level 8 elemental dash.
+
 public class Dash : MonoBehaviour
 {
-    //Serialized fields
-    [Header("Dash Settings")]
-    [SerializeField] private float DashDuration = 0.25f;
-    [SerializeField] private float DashCooldown = 1f;
-    [SerializeField] private float DashMultiplierPercentage = 0f;
-
-    // Timers for tracking the reset dash ability
-    private float CurrentDashcooldownResetTimer = 2f;
-    private float DashCooldownResetTimer = 2f;
-
-    private float DashMultiplier = 1f;
-    private float DashDistance = 25f;
-    private float CooldownBetweenMultipleDashes = 0.15f;
-
-    private int NumberOfDashesLeft = 1;
-    private int MaxNumberOfDashes = 1;
-
     private bool IsDashing = false;
-    private bool CanDash = true;
+    private bool DashOnCooldown = false;
+    [HideInInspector] public bool HasDashAbility = false;
+    [HideInInspector] public bool MaxDashAbility = false;
+    [HideInInspector] public float DashCooldownReductionMultiplier = 0f;
+    [HideInInspector] public float DashDistanceMultiplier = 0f;
+    private float DashCooldown = 4f;
+    private float DashBaseDistance = 25f;
+    private float DashDuration = 0.25f;
 
+    private float DashDamage = 30f;
     Vector2 DashDirection = Vector2.zero;
+    private PlayerController PlayerController;
+    private Rigidbody2D RigidBody;
+
+
+    private void Start()
+    {
+        RigidBody = GetComponent<Rigidbody2D>();
+        PlayerController = GetComponent<PlayerController>();
+        DashDistanceMultiplier = 0f;
+    }
 
     public void DashCallback()
     {
-        if (CanDash)
+        if (CanDash() && HasDashAbility)
             StartCoroutine(DashEnumerator());
     }
 
-    public void DecreaseDashAbilityResetTimer()
+    private bool CanDash()
     {
-        CurrentDashcooldownResetTimer -= Time.deltaTime;
-    }
-
-    public void ResetDashCooldowns()
-    {
-        if (IsAbilityResetTime())
-        {
-            NumberOfDashesLeft = MaxNumberOfDashes;
-            CurrentDashcooldownResetTimer = DashCooldownResetTimer;
-        }
-    }
-
-    private float GetDashIncrementValueFromPercentage()
-    {
-        return 1f + (DashMultiplierPercentage / 100);
-    }
-
-    private bool IsAbilityResetTime()
-    {
-        if (CurrentDashcooldownResetTimer <= 0)
-        {
+        if(DashOnCooldown == false)
             return true;
-        }
+
         return false;
     }
 
     private IEnumerator DashEnumerator()
     {
-        CurrentDashcooldownResetTimer = DashCooldownResetTimer;
-        NumberOfDashesLeft--;
-
-        CanDash = false;
         IsDashing = true;
-
-        DashMultiplier = GetDashIncrementValueFromPercentage();
-        DashDirection = PlayerController.Instance.GetInputDirection();
-        PlayerController.Instance.Rb.linearVelocity = new Vector2(DashDirection.x * DashDistance * DashMultiplier, DashDirection.y * DashDistance * DashMultiplier);
+        DashOnCooldown = true;
+        DashDirection = PlayerController.GetInputDirection();
+        RigidBody.linearVelocity = new Vector2(DashDirection.x * DashBaseDistance * (1 + DashDistanceMultiplier), DashDirection.y * DashBaseDistance * (1 + DashDistanceMultiplier));
 
         yield return new WaitForSeconds(DashDuration);
         IsDashing = false;
-
-        if (NumberOfDashesLeft > 0)
+        if (DashCooldownReductionMultiplier > 0)
         {
-            CanDash = true;
-            yield return new WaitForSeconds(CooldownBetweenMultipleDashes);
+    
+            yield return new WaitForSeconds(DashCooldown * (1 - DashCooldownReductionMultiplier));
+            DashOnCooldown = false;
         }
         else
         {
             yield return new WaitForSeconds(DashCooldown);
-            CanDash = true;
-            NumberOfDashesLeft = MaxNumberOfDashes;
+            DashOnCooldown = false;
         }
     }
 
@@ -92,5 +75,14 @@ public class Dash : MonoBehaviour
         if (IsDashing == true)
             return true;
         return false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(MaxDashAbility && other.CompareTag("Enemy") && IsCurrentlyDashing())
+        {
+            other.GetComponent<IDamagable>().TakeDamage(DashDamage);
+            Debug.Log("Dash damage " +  DashDamage);
+        }
     }
 }

@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62fa551424ac20b4aa57d10ce246f763, type: 3}
+  m_Name: HealthAbilityStats
+  m_EditorClassIdentifier: Assembly-CSharp::HealthAbilityStats
+  HealthInfo:
+  - Level: Level 1
+    Name: Mortal Vitality
+    Description: +10% max health. Small, early-game survivability boost.
+    Sprite: {fileID: 21300000, guid: 65a9b413de5bfd94e93ec34807b2dfa5, type: 3}
+    AbilityType: 3
+    MaxHealthMultiplierPercentage: 10
+    LifeStealMultiplierPercentage: 0
+    DamageReductionMultiplierPercentage: 0
+    MaxAbility: 0
+  - Level: Level 2
+    Name: Blood Infusion
+    Description: Heal 3% of damage dealt to enemies.
+    Sprite: {fileID: 21300000, guid: 5d614cd35371de9448a682533ef0e00a, type: 3}
+    AbilityType: 3
+    MaxHealthMultiplierPercentage: 0
+    LifeStealMultiplierPercentage: 2
+    DamageReductionMultiplierPercentage: 0
+    MaxAbility: 0
+  - Level: Level 3
+    Name: Hardened Skin
+    Description: Reduce all incoming damage by 5%
+    Sprite: {fileID: 21300000, guid: bd42c391d4111b0478b00bc145d5839e, type: 3}
+    AbilityType: 3
+    MaxHealthMultiplierPercentage: 0
+    LifeStealMultiplierPercentage: 0
+    DamageReductionMultiplierPercentage: 5
+    MaxAbility: 0
+  - Level: Level 4
+    Name: Vital Surge
+    Description: +15% max health. Scaling health growth.
+    Sprite: {fileID: 21300000, guid: 6236722f737098d4ebfebbe2ff90b3b3, type: 3}
+    AbilityType: 3
+    MaxHealthMultiplierPercentage: 15
+    LifeStealMultiplierPercentage: 0
+    DamageReductionMultiplierPercentage: 0
+    MaxAbility: 0
+  - Level: Level 5
+    Name: Vampiric Blade
+    Description: Lifesteal increased by 8% of damage dealth.
+    Sprite: {fileID: 21300000, guid: 8558f6706df8af242a95c7b1be3cdc32, type: 3}
+    AbilityType: 3
+    MaxHealthMultiplierPercentage: 0
+    LifeStealMultiplierPercentage: 8
+    DamageReductionMultiplierPercentage: 0
+    MaxAbility: 0
+  - Level: Level 6
+    Name: Iron Resolve
+    Description: Reduce all incoming damage by 10%
+    Sprite: {fileID: 21300000, guid: 0cb94033a241102468fda2f7b9a8935c, type: 3}
+    AbilityType: 3
+    MaxHealthMultiplierPercentage: 0
+    LifeStealMultiplierPercentage: 0
+    DamageReductionMultiplierPercentage: 10
+    MaxAbility: 0
+  - Level: Level 7
+    Name: Titan's Heart
+    Description: +25% Max health. Late-game tankiness.
+    Sprite: {fileID: 21300000, guid: ef4c76b6d3d507b4da5cc8ff02ecfba3, type: 3}
+    AbilityType: 3
+    MaxHealthMultiplierPercentage: 25
+    LifeStealMultiplierPercentage: 0
+    DamageReductionMultiplierPercentage: 0
+    MaxAbility: 0
+  - Level: Level 8
+    Name: Divine Endurance
+    Description: Heal 15% of damage dealt. Reduce incoming damage by 15%. +30% Max
+      Health.
+    Sprite: {fileID: 21300000, guid: c0dd6c60894535445a661a37b7248ec8, type: 3}
+    AbilityType: 3
+    MaxHealthMultiplierPercentage: 30
+    LifeStealMultiplierPercentage: 15
+    DamageReductionMultiplierPercentage: 15
+    MaxAbility: 1
+  CurrentAbilityLevel: 0
+  MaxAbilityLevel: 8
